@@ -11,9 +11,9 @@ public class RDBLectureServiceTest {
 	@Test
 	public void testInsertLecture() {
 		LectureDAO lectureDAO = new LectureDAO();
-		lectureDAO.setComment("강의 설명입니다.");
-		lectureDAO.setName("CI 환경 구축");
-		lectureDAO.setInstructor("소공");
+		lectureDAO.setComment("Classroom Description");
+		lectureDAO.setName("CI Environment Construction");
+		lectureDAO.setInstructor("Software Engineering");
 		
 		LectureService service = new RDBLectureService();
 		service.insertLecture(lectureDAO);

@@ -10,9 +10,9 @@ public class RestfulLectureServiceTest {
   @Test
   public void insertLecture() {
 	  LectureDAO lectureDAO = new LectureDAO();
-	  lectureDAO.setComment("강의 설명입니다.");
-	  lectureDAO.setName("CI 환경 구축");
-	  lectureDAO.setInstructor("소공");
+	  lectureDAO.setComment("Classroom Description");
+	  lectureDAO.setName("CI Env Construction");
+	  lectureDAO.setInstructor("Software Engineering");
 		
 	  RestfulLectureService service = new RestfulLectureService();
 	  service.insertLecture(lectureDAO);
