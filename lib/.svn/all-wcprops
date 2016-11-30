@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/Lectures/!svn/ver/5/branches/LectureService/lib
+END
+hamcrest-core-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Lectures/!svn/ver/3/branches/LectureService/lib/hamcrest-core-1.3.jar
+END
+testng-6.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Lectures/!svn/ver/5/branches/LectureService/lib/testng-6.8.jar
+END
+junit-4.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Lectures/!svn/ver/3/branches/LectureService/lib/junit-4.8.jar
+END

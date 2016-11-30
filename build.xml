@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LectureService" default="compile" basedir=".">
+	<property name="build.dir" location="bin"></property>
+	<property name="build.prod.dir" location="${build.dir}/prod"></property>
+	<property name="build.test.dir" location="${build.dir}/test"></property>
+	<property name="src.dir" location="src"></property>
+	<property name="test.dir" location="test"></property>
+	<property name="lib.dir" location="lib"></property>
+	<property name="test.reports" location="testReports"></property>
+	
+	
+	<path id="project.classpath">
+		<pathelement location="${build.prod.dir}"></pathelement>
+		<pathelement location="${build.test.dir}"></pathelement>
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"></include>
+		</fileset>
+	</path>
+	
+	<target name="prepare">
+		<mkdir dir="${build.prod.dir}"></mkdir>
+		<mkdir dir="${build.test.dir}"></mkdir>
+		<mkdir dir="${test.reports}"></mkdir>
+	</target>
+	
+	<target name="clean-test-reports">
+		<delete dir="${test.reports}" />
+	</target>
+	
+	<target name="compile" depends="prepare">
+		<javac srcdir="${src.dir}" destdir="${build.prod.dir}">
+			<classpath refid="project.classpath"></classpath>
+		</javac>
+	</target>
+	
+	<target name="compile-tests" depends="compile">
+		<javac srcdir="${test.dir}" destdir="${build.test.dir}">
+			<classpath refid="project.classpath"></classpath>
+		</javac>
+	</target>
+
+	
+	<target name="test" depends="compile-tests">
+		<junit haltonfailure="true">
+			<classpath refid="project.classpath"></classpath>
+			<formatter type="xml"></formatter>
+			<formatter type="brief" usefile="false"/>
+			<batchtest todir="${test.reports}">
+				<fileset dir="${build.test.dir}" includes="**/*Test.class"></fileset>
+			</batchtest>
+			<sysproperty key="doc.dir" value="${doc.dir}"></sysproperty>
+			<sysproperty key="index.dir" value="${index.dir}"></sysproperty>
+		</junit>
+		
+	</target>
+	<!-- 
+	<property name="doc.dir" location="doc"></property>
+	<property name="index.dir" location="index"></property>
+	<taskdef resource="testngtasks" classpath="lib/testng-6.8.jar"/>
+	<target name="testng" depends="compile-tests">
+		<testng outputdir="${test.reports}">
+			<classpath refid="project.classpath"></classpath>
+			<classfileset dir="${build.test.dir}" includes="**/*.class" />
+			<classfileset dir="${build.test.dir}" includes="**/RestfulLectureServiceTest.class" />
+		</testng>
+	</target>
+	-->
+	
+</project>

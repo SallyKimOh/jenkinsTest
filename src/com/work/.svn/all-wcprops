@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Lectures/!svn/ver/5/branches/LectureService/src/com/work
+END
+LectureService.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Lectures/!svn/ver/3/branches/LectureService/src/com/work/LectureService.java
+END
+LectureDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Lectures/!svn/ver/3/branches/LectureService/src/com/work/LectureDAO.java
+END
+RestfulLectureService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Lectures/!svn/ver/5/branches/LectureService/src/com/work/RestfulLectureService.java
+END
+RDBLectureService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Lectures/!svn/ver/3/branches/LectureService/src/com/work/RDBLectureService.java
+END
