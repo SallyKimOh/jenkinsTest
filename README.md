@@ -1,29 +1,10 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+이 프로젝트는 Jenkins에서 Ant Build를 테스트하기 위한 샘플 프로젝트입니다. 
 
-### What is this repository for? ###
+### 주요기능 ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* LectureService : 강의 등록과 강의 조회하는 인터페이스
+* RDBLecutureServce : 강의를 RDB에 등록, 조회하는 클래스
+* RestfulLectureService : Restful 방식으로 강의를 등록, 조회하는 클래스
+* LectureDAO : 강의를 등록, 조회하기 위한 데이터 클래스
