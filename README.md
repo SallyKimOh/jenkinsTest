@@ -8,3 +8,7 @@
 * RDBLecutureServce : 강의를 RDB에 등록, 조회하는 클래스
 * RestfulLectureService : Restful 방식으로 강의를 등록, 조회하는 클래스
 * LectureDAO : 강의를 등록, 조회하기 위한 데이터 클래스
+
+### 주의사항 ###
+
+없음
